@@ -1,0 +1,174 @@
+/* pages/sign/sign.wxss */
+page{
+  background: #ecf7e1;
+}
+
+.img {
+  width: 100%;
+  height: 100%;/*1180rpx;*/
+  margin-top: 15rpx;
+  z-index: 1;
+}
+
+.xueqi {
+  color: #37904d;
+  position: absolute;
+  z-index: 2;
+  top: 70rpx;
+  left: 210rpx;
+  display: flex;
+}
+
+.xueqibj {
+  background-color: #d0eeaf;
+  padding-bottom: 100rpx;
+  padding-left: 10rpx;
+}
+
+
+
+/* 课表 */
+.btn {   
+  width: 100%;
+  height: 100%;   
+  /*margin-top: 10rpx;*/ 
+  color: #FFF; 
+  /*padding-bottom: 10rpx;*/
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+} 
+
+.btn::after{
+  border: none; 
+} 
+
+.container {
+  position: absolute;
+  top: -40rpx;
+  left: 20rpx;
+  z-index: 3;
+}
+
+.tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10rpx;
+  margin-left: 0;
+ 
+}
+
+.trd {
+  padding: 10rpx 0rpx 0rpx 0rpx;
+  width: 15%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 30rpx;
+}
+
+.trd2 {
+  padding: 10rpx 0rpx 0rpx 0rpx;
+  width: 15%;
+  text-align: center;
+  color: #0f4d23;
+  font-size: 30rpx;
+}
+
+.trdwuxiu {
+  padding: 10rpx 0rpx 0rpx 0rpx;
+  width: 100%;
+  color: #ffffff;
+  font-size: 30rpx;
+}
+
+.wuxiu {
+  text-align: center;
+  margin-left: 140rpx;
+}
+
+.th1 {
+  background-color: #639c26;
+  padding-bottom: 10rpx;
+  border-radius: 25rpx;
+}
+
+.th1wuxiu {
+  background-color: #659c2a;
+  padding-bottom: 10rpx;
+  padding-left: 10rpx;
+  border-radius: 10rpx;
+}
+
+.tr image {
+  width: 100rpx;
+  height: 50rpx;
+}
+
+.th2 {
+  background-color: #8ece4a;
+  padding-bottom: 10rpx;
+}
+
+.th3 {
+  background-color: #9ada57;
+  padding-bottom: 10rpx;
+}
+
+.th4 {
+  background-color: #a7e564;
+  padding-bottom: 10rpx;
+}
+
+.th5 {
+  background-color: #c6e67b;
+  padding-bottom: 10rpx;
+}
+
+.th6 {
+  background-color: #8ac44c;
+  padding-bottom: 10rpx;
+}
+
+.th, .td {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.up_img{
+  width: 90%;
+  height: 35%;
+  background-color: #d0eeaf;
+  display:flex; 
+  justify-content: center; 
+  margin: 20rpx;
+}
+
+.up_img image{
+  width: 80%;
+}
+
+.up_img text{
+  color: white;
+  font-display: bold;
+}
+
+.bottom_font{
+  position: absolute;
+  bottom: 12%;
+  width: 15%;
+  background-color:  #8ac44c;
+  text-align: center;
+  color: white;
+  line-height: 25px;
+}
+
+.bottom_text{
+  position: absolute;
+  bottom: 20%;
+  text-align: center;
+  color: black;
+  line-height: 25px;
+}

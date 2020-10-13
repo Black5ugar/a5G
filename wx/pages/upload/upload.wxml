@@ -1,0 +1,5 @@
+<!--pages/upload/upload.wxml-->
+<view class="biaoti">您所上传的图片为</view>
+<image src="{{imgaddress}}"></image>
+11111
+<image src="{{imgaddress}}" bindtap="previewImageFun"></image>

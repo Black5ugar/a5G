@@ -1,0 +1,12 @@
+<!--course.wxml-->
+<view class="course-container">
+
+    <button class="course-button" hover-class="hover-course-button" bindtap="tap2sign">
+      <text>签到</text>
+    </button>
+    <button class="course-button" hover-class="hover-course-button">
+      <text>自习</text>
+    </button>
+
+    <image src="../../images/study.png"></image>
+</view>

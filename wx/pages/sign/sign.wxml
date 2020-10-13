@@ -1,0 +1,250 @@
+<!--pages/sign/sign.wxml-->
+<image src='{{image}}' class='img'></image>
+<view class="xueqibj">
+  <view class='xueqi'>
+    <view>
+    <picker mode="Selector" range="{{xueqi}}" value="{{selectedXueqiIndex}}" bindchange="selectChange">
+      {{xueqi[selectedXueqiIndex]}} 
+    </picker>
+    </view>
+    <view>
+    <picker mode="Selector" range="{{zhoushu}}" value="{{selectedZhoushuIndex}}" bindchange="selectChange2">
+        第{{zhoushu[selectedZhoushuIndex]}}周
+    </picker>
+    </view>
+  </view>
+</view>
+
+<view class="container">
+  <view class="tr">
+    <view class="trd th1">
+      time
+      <image src=''></image>
+    </view>
+
+    <view class="trd th2">
+      周一
+      <image src=''></image>
+    </view>
+
+    <view class="trd th3">
+      周二
+      <image src=''></image>
+    </view>
+
+    <view class="trd th4">
+      周三
+      <image src=''></image>
+    </view>
+
+    <view class="trd th5">
+      周四
+      <image src=''></image>
+    </view>
+
+    <view class="trd th6">
+      周五
+      <image src=''></image>
+    </view>
+  </view>
+
+  <view class="tr">
+    <view class="trd th1">
+      8:00
+    </view>
+
+    <view class="trd2 th2" bindtap="tap2upload">
+      语文
+    </view>
+
+    <view class="trd2 th3" bindtap="tap2upload">
+      语文
+    </view>
+
+    <view class="trd2 th4" bindtap="tap2upload">
+      数学
+    </view>
+
+    <view class="trd2 th5" bindtap="tap2upload">
+      数学
+    </view>
+
+    <view class="trd2 th6" bindtap="tap2upload">
+      语文
+    </view>
+  </view>
+
+  <view class="tr">
+    <view class="trd th1">
+      8:50
+    </view>
+
+    <view class="trd2 th2" bindtap="tap2upload">
+      语文
+    </view>
+
+    <view class="trd2 th3" bindtap="tap2upload">
+      语文
+    </view>
+
+    <view class="trd2 th4" bindtap="tap2upload">
+      数学
+    </view>
+
+    <view class="trd2 th5" bindtap="tap2upload">
+      数学
+    </view>
+
+    <view class="trd2 th6" bindtap="tap2upload">
+      语文
+    </view>
+  </view>
+
+  <view class="tr">
+    <view class="trd th1">
+      9:55
+    </view>
+
+    <view class="trd2 th2" bindtap="tap2upload">
+      语文
+    </view>
+
+    <view class="trd2 th3" bindtap="tap2upload">
+      语文
+    </view>
+
+    <view class="trd2 th4" bindtap="tap2upload">
+      数学
+    </view>
+
+    <view class="trd2 th5" bindtap="tap2upload">
+      数学
+    </view>
+
+    <view class="trd2 th6" bindtap="tap2upload">
+      语文
+    </view>
+  </view>
+
+  <view class="tr">
+    <view class="trd th1">
+      10:45
+    </view>
+
+    <view class="trd2 th2" bindtap="tap2upload">
+      语文
+    </view>
+
+    <view class="trd2 th3" bindtap="tap2upload">
+      语文
+    </view>
+
+    <view class="trd2 th4" bindtap="tap2upload">
+      数学
+    </view>
+
+    <view class="trd2 th5" bindtap="tap2upload">
+      数学
+    </view>
+
+    <view class="trd2 th6" bindtap="tap2upload">
+      语文
+    </view>
+  </view>
+
+
+  <view class="tr">
+    <view class="trdwuxiu th1wuxiu">
+      12:00
+      <text class='wuxiu'>o(*////▽////*)午休╰(￣ω￣ｏ)</text>
+    </view>
+  </view>
+
+  <view class="tr">
+    <view class="trd th1">
+      13:30
+    </view>
+
+    <view class="trd2 th2" bindtap="tap2upload">
+      语文
+    </view>
+
+    <view class="trd2 th3" bindtap="tap2upload">
+      语文
+    </view>
+
+    <view class="trd2 th4" bindtap="tap2upload">
+      数学
+    </view>
+
+    <view class="trd2 th5" bindtap="tap2upload">
+      数学
+    </view>
+
+    <view class="trd2 th6" bindtap="tap2upload">
+      语文
+    </view>
+  </view>
+
+  <view class="tr">
+    <view class="trd th1">
+      14:20
+    </view>
+
+    <view class="trd2 th2" bindtap="tap2upload">
+      语文
+    </view>
+
+    <view class="trd2 th3" bindtap="tap2upload">
+      语文
+    </view>
+
+    <view class="trd2 th4" bindtap="tap2upload">
+      数学
+    </view>
+
+    <view class="trd2 th5" bindtap="tap2upload">
+      数学
+    </view>
+
+    <view class="trd2 th6" bindtap="tap2upload">
+      语文
+    </view>
+  </view>
+
+  <view class="tr">
+    <view class="trd th1">
+      15:20
+    </view>
+
+    <view class="trd2 th2" bindtap="tap2upload">
+      语文
+    </view>
+
+    <view class="trd2 th3" bindtap="tap2upload">
+      语文
+    </view>
+
+    <view class="trd2 th4" bindtap="tap2upload">
+      数学
+    </view>
+
+    <view class="trd2 th5" bindtap="tap2upload">
+      数学
+    </view>
+
+    <view class="trd2 th6" bindtap="tap2upload">
+      语文
+    </view>
+  </view>
+
+  <view class="up_img" style=" height:{{viewHeight}}px;">
+    <image src="{{tempFilePaths}}" bindload="imageLoad" style="width:{{imgwidth}}px; height:{{imgheight }}px;">
+    </image>
+  </view>
+
+  <view wx:if="{{tempFilePaths}}" class="bottom_font" bindtap="up2python">提交</view>
+  <view wx:if="{{tempFilePaths}}"  class="bottom_text">
+    <text>检测到图片中人数为：{{intcount}}</text>
+  </view>
+</view>

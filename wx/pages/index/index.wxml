@@ -1,0 +1,84 @@
+<!--main.wxml-->
+<view class="container">
+  <view class="top-container">
+    <view class="left-text-for-top">
+      <text>签到小程序</text>
+      <text style="font-size:15px">\n{{year}}-{{month}}-{{day}}</text>
+    </view>
+    <view class="right-image-for-top">
+      <image src="../../images/study.png" mode="widthFix"></image>
+    </view>
+  </view>
+  <view class="middle-container">
+    <view class="middle-step">
+      <image src="../../images/sign.png" mode="widthFix"></image>
+      <text>点击"Task"</text>
+    </view>
+    <view class="middle-step">
+      <image src="../../images/camera.png" mode="widthFix"></image>
+      <text>选择"签到"</text>
+    </view>
+    <view class="middle-step">
+      <image src="../../images/people.png" mode="widthFix"></image>
+      <text>选择图片</text>
+    </view>
+  </view>
+
+  <view class="bottom-container">
+    <text style="font-size:15px;margin-left:6vw;color:#4d8411;position:relative;bottom:5px;">
+      历史记录
+    </text>
+    <view class="tab-bar-border"></view>
+
+    <!--测试history -->
+    <block wx:for-items="{{history}}" wx:for-item="his" wx:key="index" wx:if="{{index<3}}">
+      <view class="history-first">
+        <view class="history-mark"></view>
+        <view class="history-date">
+          {{his.date}}    {{his.time}}
+        </view>
+      </view>
+      <view class="history-detail">
+        <text>课程：{{his.course}}\n签到人数：{{his.number}}</text>
+      </view>
+    </block>
+
+    <!--原版固定
+    <view class="history-first">
+      <view class="history-mark"></view>
+      <view class="history-date">
+        2020-01-16
+      </view>
+    </view>
+    <view class="history-detail">
+      <text>这里是具体信息\n因为是beta版我把他写成固定程序了\n虽然我也不知道js怎么写wwww</text>
+    </view>
+
+    <view class="history-first">
+      <view class="history-mark"></view>
+      <view class="history-date">
+        2020-01-16
+      </view>
+    </view>
+    <view class="history-detail">
+      <text>这里是具体信息\n因为是beta版我把他写成固定程序了\n虽然我也不知道js怎么写wwww</text>
+    </view>
+
+    <view class="history-first">
+      <view class="history-mark"></view>
+      <view class="history-date">
+        2020-01-16
+      </view>
+    </view>
+    <view class="history-detail">
+      <text>这里是具体信息\n因为是beta版我把他写成固定程序了\n虽然我也不知道js怎么写wwww</text>
+    </view>
+    -->
+
+    <view class="history-first">
+      <text style="font-size:13px;color:grey;margin-left:7vw;" bindtap="conlog_text">>>更多</text>
+    </view>
+
+  </view>
+</view>
+

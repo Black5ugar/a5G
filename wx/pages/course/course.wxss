@@ -1,0 +1,29 @@
+.course-container{
+  padding-top: 20%;
+  align-content: center;
+}
+
+.course-container image{
+  opacity: 0.2;
+  width: 85vw;
+  height: 85vw;
+  position: absolute;
+  bottom: -2vw;
+  right: -12vw;
+}
+.course-button {
+  width: 75vw;
+  margin-top: 80rpx;
+  margin-left:auto;
+  margin-right:right;
+  background-color: #a7e564;
+  color: #6f9843;
+  font-size: 20px;
+  text-align: center;
+}
+.course-button::after{
+  border: 0
+}
+.hover-course-button{
+  background-color: #9dd166;
+}

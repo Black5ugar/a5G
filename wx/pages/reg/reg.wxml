@@ -1,0 +1,33 @@
+<!--pages/reg/reg.wxml-->
+<view class="container">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" 
+      class="button" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        <view class="num">ID：41792899</view>
+      </block>
+    </view>
+
+
+
+  <view class="middle-container">
+  <view class="regblock">
+    <view class="reglabel">工号</view>
+    <input class="reg" name="tid" type="number" placeholder="请输入工号"></input>
+  </view>
+  <view class="tab-bar-border"></view>
+  <view class="regblock">
+    <view class="reglabel">密码</view>
+    <input class="reg" password type="text" name="pwd" placeholder="请输入密码"></input>
+  </view>
+  <view class="tab-bar-border"></view>
+  </view>
+
+  <button bindtap="to_mine" class="regbutton" >绑定</button>
+
+
+
+
+</view>

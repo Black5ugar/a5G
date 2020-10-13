@@ -1,0 +1,41 @@
+<!--pages/mine/mine.wxml-->
+<view class="container">
+<view class="top-container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" 
+    class="button"
+    bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <view class="num">ID：41792899</view>
+    </block>
+  </view>
+</view>
+<view class="middle-container">
+
+<view class="infoblock">
+  <view class="info-label">姓名</view>
+  <view class="info">{{name}}</view>
+</view>
+  <view class="tab-bar-border"></view>
+
+<view class="infoblock">
+  <view class="info-label">工号</view>
+  <view class="info">{{number}}</view>
+</view>
+  <view class="tab-bar-border"></view>
+
+<view class="infoblock">
+  <view class="info-label">学院</view>
+  <view class="info">{{institude}}</view>
+</view>
+  <view class="tab-bar-border"></view>
+
+</view>
+
+<view>
+<a bindtap="to_reg" class="to_reg">重新绑定>></a>
+</view>
+
+</view>

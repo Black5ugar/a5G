@@ -1,0 +1,17 @@
+.biaoti {
+  color: #37903e;
+  position: absolute;
+  z-index: 2;
+  top: 30rpx;
+  left: 240rpx;
+}
+.previewimg{
+    float:left;
+    width:45%;
+    height:200px;
+    margin:2%;
+}
+.previewimg image{
+    width:100%;
+    height:100%;
+}
